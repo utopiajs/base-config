@@ -1,6 +1,6 @@
 {
   "name": "@utopia/eslint-config-base",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "eslint config",
   "author": "KuangPF <1633397286@qq.com>",
   "homepage": "https://github.com/utopiajs/base-config#readme",
@@ -14,6 +14,7 @@
     "lib"
   ],
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "repository": {
@@ -32,5 +33,6 @@
   "peerDependencies": {
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-plugin-import": "^2.26.0"
-  }
+  },
+  "gitHead": "1c4dccc45f18ec435659244eb0268c1ca72c7545"
 }

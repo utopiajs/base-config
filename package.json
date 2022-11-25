@@ -4,6 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "publish": "lerna publish from-git"
+  },
   "devDependencies": {
     "lerna": "6.0.3"
   }
