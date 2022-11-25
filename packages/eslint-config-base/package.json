@@ -25,5 +25,12 @@
   },
   "bugs": {
     "url": "https://github.com/utopiajs/base-config/issues"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "15.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
