@@ -1,0 +1,10 @@
+{
+  "name": "@utopia",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.0.3"
+  }
+}
