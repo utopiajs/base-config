@@ -6,6 +6,10 @@
   "homepage": "https://github.com/utopiajs/base-config#readme",
   "license": "MIT",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./hooks": "./hooks.js"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
