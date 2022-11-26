@@ -28,11 +28,15 @@
     "url": "https://github.com/utopiajs/base-config/issues"
   },
   "dependencies": {
-    "@utopia/eslint-config-base": "^0.0.1"
+    "@utopia/eslint-config-base": "^0.0.1",
+    "object.assign": "^4.1.4"
   },
   "peerDependencies": {
     "eslint": "^7.32.0 || ^8.2.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "gitHead": "2caf6e579fc2f8e1ad3c192e3d0758395317b700"
 }
