@@ -1,5 +1,6 @@
 {
   "name": "website",
+  "private": true,
   "version": "0.0.1",
   "description": "website for base-config",
   "author": "KuangPF <1633397286@qq.com>",
@@ -27,5 +28,8 @@
   },
   "devDependencies": {
     "@utopia/eslint-config-react": "^0.0.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
   }
 }
