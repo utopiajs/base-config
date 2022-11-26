@@ -1,7 +1,7 @@
 {
   "name": "website",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "website for base-config",
   "author": "KuangPF <1633397286@qq.com>",
   "homepage": "https://github.com/utopiajs/base-config#readme",
@@ -27,7 +27,7 @@
     "url": "https://github.com/utopiajs/base-config/issues"
   },
   "devDependencies": {
-    "@utopia/eslint-config-react": "^0.0.1"
+    "@utopia/eslint-config-react": "^0.0.2"
   },
   "dependencies": {
     "react": "^18.2.0"
