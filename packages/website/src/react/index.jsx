@@ -6,6 +6,7 @@ function App() {
   useEffect(() => {
     setNum(Date.now());
   }, []);
+
   return <div>{`base config ${num}`}</div>;
 }
 
