@@ -9,3 +9,6 @@
 
 ### status
 WIP
+
+### License
+The MIT License

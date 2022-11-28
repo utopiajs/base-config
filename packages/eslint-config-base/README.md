@@ -1,6 +1,6 @@
 # @utopia/eslint-config-base
 
-该包提供基础版本 js 相关的 eslint 配置，内置规则基于 [eslint-config-airbnb-base][eslint-config-airbnb-url]，也可根据个人（团队）规范增加或者重写相关 rules。
+该包提供基础版本 js 相关的 eslint 配置，内置规则基于 [eslint-config-airbnb-base][eslint-config-airbnb-base-url]，也可根据个人（团队）规范增加或者重写相关 rules。
 
 ### Install
 ``` sh
