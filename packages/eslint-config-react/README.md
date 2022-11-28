@@ -1,6 +1,6 @@
 # @utopia/eslint-config-react
 
-该包提供 React 相关的 eslint 配置，内置包含 [@utopia/eslint-config-base]([@utopia/eslint-config-base-url]) 中提供的配置，同时支持 React 插件以及 Hooks等，也可根据个人（团队）规范增加或者重写相关 rules。
+该包提供 React 相关的 eslint 配置，内置包含 [@utopia/eslint-config-base][@utopia/eslint-config-base-url] 中提供的配置，同时支持 React 插件以及 Hooks等，也可根据个人（团队）规范增加或者重写相关 rules。
 
 ### Install
 ``` sh
