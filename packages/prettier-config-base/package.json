@@ -1,14 +1,11 @@
 {
   "name": "@utopia/prettier-config-base",
   "version": "0.0.2",
-  "description": "> TODO: description",
+  "description": "prettier config",
   "author": "KuangPF <1633397286@qq.com>",
   "homepage": "https://github.com/utopiajs/base-config#readme",
   "license": "MIT",
   "main": "index.js",
-  "directories": {
-    "test": "__tests__"
-  },
   "files": [
     "lib"
   ],
@@ -24,5 +21,8 @@
   },
   "bugs": {
     "url": "https://github.com/utopiajs/base-config/issues"
+  },
+  "peerDependencies": {
+    "prettier": "^2.8.0"
   }
 }
