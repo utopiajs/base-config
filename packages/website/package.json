@@ -28,7 +28,8 @@
   },
   "devDependencies": {
     "@utopia/eslint-config-react": "^0.0.2",
-    "@utopia/eslint-config-vue": "^0.0.2"
+    "@utopia/eslint-config-vue": "^0.0.2",
+    "@utopia/prettier-config-base": "^0.0.2"
   },
   "dependencies": {
     "react": "^18.2.0",
