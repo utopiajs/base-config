@@ -1,4 +1,4 @@
-const allExtensions = ['.ts', '.tsx', '.js', '.jsx']
+const allExtensions = ['.ts', '.tsx', '.js', '.jsx'];
 
 module.exports = {
   parser: '@typescript-eslint/parser',
@@ -20,5 +20,16 @@ module.exports = {
 
     // TypeScript compilation already ensures that named imports exist in the referenced module
     'import/named': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        '': 'never',
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
-}
+};
