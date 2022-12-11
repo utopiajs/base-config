@@ -1,8 +1,15 @@
 module.exports = {
-  extends: ['eslint-config-airbnb-base', './rules/typescript'].map(require.resolve),
+  extends: ['eslint-config-airbnb-base', './rules/typescript'].map(
+    require.resolve
+  ),
   rules: {
     // override default rules
-    'comma-dangle': ['error', { functions: 'never' }],
+    'comma-dangle': [
+      'error',
+      {
+        functions: 'never'
+      }
+    ],
     'import/prefer-default-export': 'off',
     'operator-linebreak': 'off',
     'max-len': 'off',
@@ -13,14 +20,14 @@ module.exports = {
       {
         ObjectExpression: 'always',
         ObjectPattern: {
-          multiline: true,
+          multiline: true
         },
         ImportDeclaration: 'never',
         ExportDeclaration: {
           multiline: true,
-          minProperties: 3,
-        },
-      },
-    ],
-  },
+          minProperties: 3
+        }
+      }
+    ]
+  }
 };
