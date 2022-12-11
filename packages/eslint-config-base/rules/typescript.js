@@ -2,6 +2,7 @@ const allExtensions = ['.ts', '.tsx', '.js', '.jsx'];
 
 module.exports = {
   parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
   settings: {
     'import/extensions': allExtensions,
     'import/external-module-folders': ['node_modules', 'node_modules/@types'],
@@ -16,9 +17,7 @@ module.exports = {
   },
 
   rules: {
-    // analysis/correctness
-
-    // TypeScript compilation already ensures that named imports exist in the referenced module
+    "@typescript-eslint/no-unused-vars": "warn",
     'import/named': 'off',
     'import/extensions': [
       'error',
