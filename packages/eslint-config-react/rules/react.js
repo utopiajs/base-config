@@ -11,6 +11,8 @@ const dangleRules = [
   },
 ];
 
+const allExtensions = ['.js', '.jsx', '.json', '.ts', '.tsx'];
+
 module.exports = {
   plugins: ['react'],
 
@@ -19,7 +21,6 @@ module.exports = {
       jsx: true,
     },
   },
-
   // View link below for react rules documentation
   // https://github.com/jsx-eslint/eslint-plugin-react#list-of-supported-rules
   rules: {
@@ -645,7 +646,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.json'],
+        extensions: allExtensions,
       },
     },
     react: {
