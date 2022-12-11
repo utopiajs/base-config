@@ -6,9 +6,6 @@
   "homepage": "https://github.com/utopiajs/base-config#readme",
   "license": "MIT",
   "main": "index.js",
-  "files": [
-    "lib"
-  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
