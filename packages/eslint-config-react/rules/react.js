@@ -7,8 +7,8 @@ const dangleRules = [
     allow: [],
     allowAfterThis: false,
     allowAfterSuper: false,
-    enforceInMethodNames: true,
-  },
+    enforceInMethodNames: true
+  }
 ];
 
 const allExtensions = ['.js', '.jsx', '.json', '.ts', '.tsx'];
@@ -18,8 +18,8 @@ module.exports = {
 
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   // View link below for react rules documentation
   // https://github.com/jsx-eslint/eslint-plugin-react#list-of-supported-rules
@@ -27,8 +27,10 @@ module.exports = {
     'no-underscore-dangle': [
       dangleRules[0],
       assign({}, dangleRules[1], {
-        allow: dangleRules[1].allow.concat(['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__']),
-      }),
+        allow: dangleRules[1].allow.concat([
+          '__REDUX_DEVTOOLS_EXTENSION_COMPOSE__'
+        ])
+      })
     ],
 
     // Specify whether double or single quotes should be used in JSX attributes
@@ -54,9 +56,9 @@ module.exports = {
           'componentDidUpdate',
           'componentWillUnmount',
           'componentDidCatch',
-          'getSnapshotBeforeUpdate',
-        ],
-      },
+          'getSnapshotBeforeUpdate'
+        ]
+      }
     ],
 
     // Prevent missing displayName in a React component definition
@@ -70,8 +72,8 @@ module.exports = {
       {
         forbid: ['any', 'array', 'object'],
         checkContextTypes: true,
-        checkChildContextTypes: true,
-      },
+        checkChildContextTypes: true
+      }
     ],
 
     // Forbid certain props on DOM Nodes
@@ -100,8 +102,8 @@ module.exports = {
       'off',
       {
         eventHandlerPrefix: 'handle',
-        eventHandlerPropPrefix: 'on',
-      },
+        eventHandlerPropPrefix: 'on'
+      }
     ],
 
     // Validate props indentation in JSX
@@ -115,7 +117,10 @@ module.exports = {
 
     // Limit maximum of props on a single line in JSX
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
-    'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }],
+    'react/jsx-max-props-per-line': [
+      'error',
+      { maximum: 1, when: 'multiline' }
+    ],
 
     // Prevent usage of .bind() in JSX props
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
@@ -126,8 +131,8 @@ module.exports = {
         allowArrowFunctions: true,
         allowFunctions: false,
         allowBind: false,
-        ignoreDOMComponents: true,
-      },
+        ignoreDOMComponents: true
+      }
     ],
 
     // Prevent duplicate props in JSX
@@ -148,8 +153,8 @@ module.exports = {
       'error',
       {
         allowAllCaps: true,
-        ignore: [],
-      },
+        ignore: []
+      }
     ],
 
     // Enforce propTypes declarations alphabetical sorting
@@ -160,8 +165,8 @@ module.exports = {
         ignoreCase: true,
         callbacksLast: false,
         requiredFirst: false,
-        sortShapeProp: true,
-      },
+        sortShapeProp: true
+      }
     ],
 
     // Deprecated in favor of react/jsx-sort-props
@@ -177,8 +182,8 @@ module.exports = {
         shorthandFirst: false,
         shorthandLast: false,
         noSortAlphabetically: false,
-        reservedFirst: true,
-      },
+        reservedFirst: true
+      }
     ],
 
     // Enforce defaultProps declarations alphabetical sorting
@@ -186,8 +191,8 @@ module.exports = {
     'react/jsx-sort-default-props': [
       'off',
       {
-        ignoreCase: true,
-      },
+        ignoreCase: true
+      }
     ],
 
     // Prevent React to be incorrectly marked as unused
@@ -249,7 +254,10 @@ module.exports = {
 
     // Require stateless functions when not using lifecycle methods, setState or ref
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
-    'react/prefer-stateless-function': ['error', { ignorePureComponents: true }],
+    'react/prefer-stateless-function': [
+      'error',
+      { ignorePureComponents: true }
+    ],
 
     // Prevent missing props validation in a React component definition
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md
@@ -258,8 +266,8 @@ module.exports = {
       {
         ignore: [],
         customValidators: [],
-        skipUndeclared: false,
-      },
+        skipUndeclared: false
+      }
     ],
 
     // Prevent missing React when using JSX
@@ -291,7 +299,7 @@ module.exports = {
           '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
           'instance-methods',
           'everything-else',
-          'rendering',
+          'rendering'
         ],
         groups: {
           lifecycle: [
@@ -319,11 +327,11 @@ module.exports = {
             'getSnapshotBeforeUpdate',
             'componentDidUpdate',
             'componentDidCatch',
-            'componentWillUnmount',
+            'componentWillUnmount'
           ],
-          rendering: ['/^render.+$/', 'render'],
-        },
-      },
+          rendering: ['/^render.+$/', 'render']
+        }
+      }
     ],
 
     // Prevent missing parentheses around multilines JSX
@@ -337,8 +345,8 @@ module.exports = {
         arrow: 'parens-new-line',
         condition: 'parens-new-line',
         logical: 'parens-new-line',
-        prop: 'parens-new-line',
-      },
+        prop: 'parens-new-line'
+      }
     ],
 
     // Require that the first prop in a JSX element be on a new line when the element is multiline
@@ -395,8 +403,8 @@ module.exports = {
       'error',
       {
         customValidators: [],
-        skipShapeProps: true,
-      },
+        skipShapeProps: true
+      }
     ],
 
     // Require style prop value be an object or var
@@ -419,8 +427,8 @@ module.exports = {
         closingSlash: 'never',
         beforeSelfClosing: 'always',
         afterOpening: 'never',
-        beforeClosing: 'never',
-      },
+        beforeClosing: 'never'
+      }
     ],
 
     // Enforce spaces before the closing bracket of self-closing JSX elements
@@ -437,8 +445,8 @@ module.exports = {
     'react/require-default-props': [
       'error',
       {
-        forbidDefaultForRequired: true,
-      },
+        forbidDefaultForRequired: true
+      }
     ],
 
     // Forbids using non-exported propTypes
@@ -453,7 +461,10 @@ module.exports = {
 
     // Enforce all defaultProps have a corresponding non-required PropType
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/9e13ae2c51e44872b45cc15bf1ac3a72105bdd0e/docs/rules/default-props-match-prop-types.md
-    'react/default-props-match-prop-types': ['error', { allowRequiredDefaults: false }],
+    'react/default-props-match-prop-types': [
+      'error',
+      { allowRequiredDefaults: false }
+    ],
 
     // Prevent usage of shouldComponentUpdate when extending React.PureComponent
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/9e13ae2c51e44872b45cc15bf1ac3a72105bdd0e/docs/rules/no-redundant-should-component-update.md
@@ -470,8 +481,8 @@ module.exports = {
       {
         propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'],
         rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+',
-        message: '',
-      },
+        message: ''
+      }
     ],
 
     // Prevents common casing typos
@@ -480,7 +491,10 @@ module.exports = {
 
     // Enforce curly braces or disallow unnecessary curly braces in JSX props and/or children
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
-    'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
+    'react/jsx-curly-brace-presence': [
+      'error',
+      { props: 'never', children: 'never' }
+    ],
 
     // One JSX Element Per Line
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-one-expression-per-line.md
@@ -501,8 +515,8 @@ module.exports = {
       {
         button: true,
         submit: true,
-        reset: false,
-      },
+        reset: false
+      }
     ],
 
     // Ensures inline tags are not rendered without spaces between them
@@ -534,8 +548,8 @@ module.exports = {
       'error',
       {
         multiline: 'consistent',
-        singleline: 'consistent',
-      },
+        singleline: 'consistent'
+      }
     ],
 
     // Enforce state initialization style
@@ -556,8 +570,8 @@ module.exports = {
         html: 'enforce',
         custom: 'enforce',
         explicitSpread: 'ignore',
-        exceptions: [],
-      },
+        exceptions: []
+      }
     ],
 
     // Enforce that props are read-only
@@ -571,9 +585,9 @@ module.exports = {
       [
         {
           name: 'Link',
-          props: ['to'],
-        },
-      ],
+          props: ['to']
+        }
+      ]
     ],
 
     // Disallow unnecessary fragments
@@ -591,8 +605,8 @@ module.exports = {
       'off',
       {
         namedComponents: ['function-declaration', 'function-expression'],
-        unnamedComponents: 'function-expression',
-      },
+        unnamedComponents: 'function-expression'
+      }
     ],
 
     // Enforce a new line after jsx elements and expressions
@@ -640,23 +654,23 @@ module.exports = {
     // Prevent problematic leaked values from being rendered
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/c42b624d0fb9ad647583a775ab9751091eec066f/docs/rules/jsx-no-leaked-render.md
     // TODO: semver-major, enable
-    'react/jsx-no-leaked-render': 'off',
+    'react/jsx-no-leaked-render': 'off'
   },
 
   settings: {
     'import/resolver': {
       node: {
-        extensions: allExtensions,
-      },
+        extensions: allExtensions
+      }
     },
     react: {
       pragma: 'React',
-      version: 'detect',
+      version: 'detect'
     },
     propWrapperFunctions: [
       'forbidExtraProps', // https://www.npmjs.com/package/airbnb-prop-types
       'exact', // https://www.npmjs.com/package/prop-types-exact
-      'Object.freeze', // https://tc39.github.io/ecma262/#sec-object.freeze
-    ],
-  },
+      'Object.freeze' // https://tc39.github.io/ecma262/#sec-object.freeze
+    ]
+  }
 };

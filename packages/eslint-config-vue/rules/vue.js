@@ -8,8 +8,8 @@ module.exports = {
       {
         ignoreWhenNoAttributes: true,
         ignoreWhenEmpty: true,
-        ignores: ['pre', 'textarea',],
-      },
-    ],
-  },
+        ignores: ['pre', 'textarea']
+      }
+    ]
+  }
 };

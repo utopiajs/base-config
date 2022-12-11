@@ -5,6 +5,8 @@
     "packages/*"
   ],
   "scripts": {
+    "lint:es": "eslint \"packages/**/*.{js,jsx,ts,tsx}\"",
+    "prettier": "prettier packages/* --write",
     "publish": "lerna publish",
     "publish:from-git": "lerna publish from-git"
   },

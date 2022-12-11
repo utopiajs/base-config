@@ -7,17 +7,17 @@ module.exports = {
     'import/extensions': allExtensions,
     'import/external-module-folders': ['node_modules', 'node_modules/@types'],
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
+      '@typescript-eslint/parser': ['.ts', '.tsx']
     },
     'import/resolver': {
       node: {
-        extensions: allExtensions,
-      },
-    },
+        extensions: allExtensions
+      }
+    }
   },
 
   rules: {
-    "@typescript-eslint/no-unused-vars": "warn",
+    '@typescript-eslint/no-unused-vars': 'warn',
     'import/named': 'off',
     'import/extensions': [
       'error',
@@ -27,8 +27,8 @@ module.exports = {
         js: 'never',
         jsx: 'never',
         ts: 'never',
-        tsx: 'never',
-      },
-    ],
-  },
+        tsx: 'never'
+      }
+    ]
+  }
 };

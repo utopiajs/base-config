@@ -5,20 +5,21 @@
 **tip**：内置支持的 vue 版本为 3.x 。
 
 ### Install
-``` sh
+
+```sh
 npm install --save-dev @utopia/eslint-config-vue
-# or 
+# or
 yarn add -D @utopia/eslint-config-vue
 ```
 
 ### Usage
-在 .eslintrc.* 文件中配置：
 
-``` js
+在 .eslintrc.\* 文件中配置：
+
+```js
 module.exports = {
-  extends: ['@utopia/eslint-config-vue'],
+  extends: ['@utopia/eslint-config-vue']
 };
-
 ```
 
 [@utopia/eslint-config-base-url]: https://github.com/utopiajs/base-config/tree/main/packages/eslint-config-base
