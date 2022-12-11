@@ -6,6 +6,7 @@
 * [@utopia/eslint-config-base](./packages/eslint-config-base)
 * [@utopia/eslint-config-react](./packages/eslint-config-react)
 * [@utopia/eslint-config-vue](./packages/eslint-config-vue)
+* [@utopia/prettier-config-base](./packages/prettier-config-base)
 
 ### status
 WIP
