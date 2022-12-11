@@ -1,6 +1,6 @@
 {
   "name": "@utopia/eslint-config-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "eslint-config-react",
   "author": "KuangPF <1633397286@qq.com>",
   "homepage": "https://github.com/utopiajs/base-config#readme",
@@ -29,7 +29,7 @@
     "url": "https://github.com/utopiajs/base-config/issues"
   },
   "dependencies": {
-    "@utopia/eslint-config-base": "^0.0.4",
+    "@utopia/eslint-config-base": "^0.0.5",
     "object.assign": "^4.1.4"
   },
   "peerDependencies": {
