@@ -12,7 +12,7 @@ yarn add -D @utopia/prettier-config-base
 
 ### Usage
 
-在 .prettier.js 文件中配置：
+在 .prettierrc.js 文件中配置：
 
 ```js
 module.exports = {
