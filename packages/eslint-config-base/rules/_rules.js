@@ -1,7 +1,7 @@
 module.exports = {
   rules: {
     // override default rules
-    'no-underscore-dangle': 'off',
+    'no-underscore-dangle': 0,
     'object-curly-newline': 0,
     'comma-dangle': [
       'error',
@@ -20,5 +20,12 @@ module.exports = {
   globals: {
     window: true,
     gtag: true
+  },
+  env: {
+    browser: true,
+    node: true,
+    jasmine: true,
+    jest: true,
+    es6: true
   }
 };
