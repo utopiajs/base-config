@@ -9,6 +9,8 @@ module.exports = {
     'react/no-danger': 0,
     'react/require-default-props': 'off',
     'react/no-array-index-key': 0,
+    'react/jsx-wrap-multilines': 0,
+    'no-underscore-dangle': 0,
     // React a11y
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/no-static-element-interactions': 0,
