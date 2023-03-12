@@ -14,8 +14,11 @@ module.exports = {
     'max-len': 'off',
     'arrow-body-style': 'off',
     'implicit-arrow-linebreak': 0,
-    'react/no-array-index-key': 0,
     'global-require': 0,
     indent: 0
+  },
+  globals: {
+    window: true,
+    gtag: true
   }
 };
