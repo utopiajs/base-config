@@ -19,7 +19,9 @@ module.exports = {
   },
   globals: {
     window: true,
-    gtag: true
+    gtag: true,
+    jsdom: true,
+    JSX: true
   },
   env: {
     browser: true,
