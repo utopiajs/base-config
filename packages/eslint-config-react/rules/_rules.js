@@ -11,6 +11,7 @@ module.exports = {
     'react/no-array-index-key': 0,
     'react/jsx-wrap-multilines': 0,
     'no-underscore-dangle': 0,
+    'react/prop-types': 0,
     // React a11y
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/no-static-element-interactions': 0,
