@@ -1,8 +1,14 @@
 const allExtensions = ['.ts', '.tsx', '.js', '.jsx'];
 
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  extends: ['plugin:@typescript-eslint/recommended'],
+  overrides: [
+    {
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      files: ['**/*.{ts,tsx}']
+    }
+  ],
   settings: {
     'import/extensions': allExtensions,
     'import/external-module-folders': ['node_modules', 'node_modules/@types'],
