@@ -1,6 +1,6 @@
 {
   "name": "@utopia/eslint-config-base",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "eslint config",
   "author": "KuangPF <1633397286@qq.com>",
   "homepage": "https://github.com/utopiajs/base-config#readme",
