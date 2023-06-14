@@ -15,6 +15,18 @@ module.exports = {
     'arrow-body-style': 'off',
     'implicit-arrow-linebreak': 0,
     'global-require': 0,
+    'import/named': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        '': 'never',
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never'
+      }
+    ],
     indent: 0
   },
   globals: {

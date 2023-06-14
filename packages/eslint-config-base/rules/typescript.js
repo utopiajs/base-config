@@ -1,12 +1,12 @@
 const allExtensions = ['.ts', '.tsx', '.js', '.jsx'];
 
 module.exports = {
-  extends: ['plugin:@typescript-eslint/recommended'],
   overrides: [
     {
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
-      files: ['**/*.{ts,tsx}']
+      files: ['**/*.ts', '**/*.tsx'],
+      extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended']
     }
   ],
   settings: {
@@ -20,21 +20,5 @@ module.exports = {
         extensions: allExtensions
       }
     }
-  },
-
-  rules: {
-    '@typescript-eslint/no-unused-vars': 'warn',
-    'import/named': 'off',
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        '': 'never',
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never'
-      }
-    ]
   }
 };
