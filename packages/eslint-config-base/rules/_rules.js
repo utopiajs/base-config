@@ -1,4 +1,8 @@
 module.exports = {
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false
+  },
   rules: {
     // override default rules
     'no-underscore-dangle': 0,
