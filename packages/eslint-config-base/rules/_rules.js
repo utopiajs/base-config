@@ -3,6 +3,19 @@ module.exports = {
   parserOptions: {
     requireConfigFile: false
   },
+  globals: {
+    window: true,
+    gtag: true,
+    jsdom: true,
+    JSX: true
+  },
+  env: {
+    browser: true,
+    node: true,
+    jasmine: true,
+    jest: true,
+    es6: true
+  },
   rules: {
     // override default rules
     'no-underscore-dangle': 0,
@@ -32,18 +45,5 @@ module.exports = {
       }
     ],
     indent: 0
-  },
-  globals: {
-    window: true,
-    gtag: true,
-    jsdom: true,
-    JSX: true
-  },
-  env: {
-    browser: true,
-    node: true,
-    jasmine: true,
-    jest: true,
-    es6: true
   }
 };
