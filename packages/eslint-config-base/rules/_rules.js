@@ -1,7 +1,12 @@
+const allExtensions = ['.ts', '.tsx', '.js', '.jsx'];
+
 module.exports = {
   parser: '@babel/eslint-parser',
+  plugins: ['import'],
   parserOptions: {
-    requireConfigFile: false
+    requireConfigFile: false,
+    ecmaVersion: 2018,
+    sourceType: 'module'
   },
   globals: {
     window: true,
@@ -45,5 +50,12 @@ module.exports = {
       }
     ],
     indent: 0
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: allExtensions
+      }
+    }
   }
 };

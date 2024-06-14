@@ -11,16 +11,17 @@ const dangleRules = [
   }
 ];
 
-const allExtensions = ['.js', '.jsx', '.json', '.ts', '.tsx'];
-
 module.exports = {
-  plugins: ['react'],
-
   parserOptions: {
     ecmaFeatures: {
       jsx: true
+    },
+    babelOptions: {
+      presets: ['@babel/preset-react'] // 这里添加你的 Babel 预设
     }
   },
+  plugins: ['react'],
+
   // View link below for react rules documentation
   // https://github.com/jsx-eslint/eslint-plugin-react#list-of-supported-rules
   rules: {
@@ -656,21 +657,9 @@ module.exports = {
     // TODO: semver-major, enable
     'react/jsx-no-leaked-render': 'off'
   },
-
   settings: {
-    'import/resolver': {
-      node: {
-        extensions: allExtensions
-      }
-    },
     react: {
-      pragma: 'React',
       version: 'detect'
-    },
-    propWrapperFunctions: [
-      'forbidExtraProps', // https://www.npmjs.com/package/airbnb-prop-types
-      'exact', // https://www.npmjs.com/package/prop-types-exact
-      'Object.freeze' // https://tc39.github.io/ecma262/#sec-object.freeze
-    ]
+    }
   }
 };

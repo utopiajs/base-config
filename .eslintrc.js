@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@utopia/eslint-config-base'] // for js
+  extends: ['@utopia/eslint-config-react'] // for js
 };
