@@ -1,7 +1,7 @@
 {
   "name": "website",
   "private": true,
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "website for base-config",
   "author": "KuangPF <1633397286@qq.com>",
   "homepage": "https://github.com/utopiajs/base-config#readme",
@@ -25,9 +25,9 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
-    "@utopia/eslint-config-react": "^0.0.13",
-    "@utopia/eslint-config-vue": "^0.0.13",
-    "@utopia/prettier-config-base": "^0.0.13"
+    "@utopia/eslint-config-react": "^0.0.14",
+    "@utopia/eslint-config-vue": "^0.0.14",
+    "@utopia/prettier-config-base": "^0.0.14"
   },
   "dependencies": {
     "react": "^18.2.0",
